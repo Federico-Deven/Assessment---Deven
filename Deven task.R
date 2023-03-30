@@ -1,3 +1,10 @@
+library(shiny)
+library(data.table)
+library(DT)
+library(ggplot2)
+library(tidyr)
+library(jsonlite)
+
 ui <- fluidPage(
   titlePanel("Uploading Files"),
   fileInput("upload", NULL, label = "Please upload CSV File", buttonLabel = "Upload...", accept = ".csv", multiple = FALSE),
